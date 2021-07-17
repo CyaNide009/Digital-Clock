@@ -1,0 +1,71 @@
+body{
+    background-color: black;
+    color: rgb(145, 145, 145);
+    padding: 5%;
+    text-align: center;
+    font-family:'Orbitron', sans-serif;
+}
+
+.container{
+    margin: auto;
+    padding: 0.5%;
+}
+
+.row{
+    margin: 3%;
+}
+.format{
+    display: inline;
+    margin: 2%;
+    font-size: 2.5rem;
+    padding: 5px;
+    font-weight: bold;
+}
+.days{
+    display: inline;
+    margin: 0.8%;
+    font-size: 150%;
+    padding: 0.8%;
+    font-weight: 600;
+}
+
+.time{
+    font-size: 900%;
+    padding: 3%;
+    color: crimson;
+    font-weight: 700;
+}
+
+.format12{
+    display: inline-block;
+}
+
+.format24{
+    display: inline-block;
+    color: crimson;
+}
+
+@media screen and (max-width: 700px){
+    .time{
+        font-size: 500%;
+    }
+    .format12{
+        display:block;
+        margin: .8%;
+    }
+    .days{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 1400px) and (min-width:701px){
+    .days{
+        font-size: 125%;
+        margin: 0.4%;
+        padding: 0.4%;
+    }
+    .time{
+        font-size: 700%;
+    }
+}
